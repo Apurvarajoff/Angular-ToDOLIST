@@ -1,0 +1,14 @@
+<section id="tasks">
+    <header>
+        <h2>{{name}}'s task</h2>
+        <menu>
+            <button>Add task</button>
+        </menu>
+    </header>
+
+    <ul>
+       <li *ngFor="let task of selectedUserTasks; index as i">
+           <app-task [task]="task"/>
+       </li>
+    </ul>
+</section>
